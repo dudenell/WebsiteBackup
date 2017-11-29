@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+#panel {
+	margin: 0px;
+	padding: 5px;
+	background: #d6ebff;
+	border: solid 1px #004c99;
+	width: 350px;
+	display: none;
+}
+#cover {
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+	background: #d6ebff;
+	border: solid 1px #004c99;
+	width:350px;
+}

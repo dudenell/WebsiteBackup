@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Midterm Exam</title>
+</head>
+
+<body>
+<h1>Car Insurance</h1>
+<p>Reserve a rental car at Rent-a-wreck:</p>
+<form id="form1" name="form1" method="post" action="midterm.php">
+<p>
+<label>Full Name
+<input type="text" name="fullname" id="fullname" />
+</label>
+</p>
+<p>
+<label>Age:
+<input name="age" type="text" id="age" size="3" maxlength="3" />
+</label>
+</p>
+<p>
+<label>Number of Rental Days:
+<input name="days" type="text" id="days" size="3" maxlength="3" />
+</label>
+</p>
+<p>Type of car:</p>
+<p>
+<label>
+<input name="car_type" type="radio" id="car_type_0" value="0" checked="checked" />
+Compact</label>
+<br />
+<label>
+<input type="radio" name="car_type" value="15" id="car_type_1" />
+Sedan</label>
+<br />
+<label>
+<input type="radio" name="car_type" value="25" id="car_type_2" />
+Luxury</label>
+<br />
+<label>
+<input type="radio" name="car_type" value="40" id="car_type_3" />
+Van</label>
+</p>
+<p>
+<label>
+<input type="checkbox" name="gps" id="gps" />
+GPS Included</label>
+(Add $100 total)</p>
+<p>
+<label>
+<input type="checkbox" name="extradriver" id="extradriver" />
+Extra Driver (add $25 per day)</label>
+</p>
+<p>
+<input type="submit" name="button" id="button" value="Reserve the Car" />
+<br />
+</p>
+</form>
+</body>
+</html>

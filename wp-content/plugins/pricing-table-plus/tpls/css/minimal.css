@@ -1,0 +1,221 @@
+
+/* Table
+-------------------------------------------------------------------*/
+
+#shaon-pricing-table-plus ul,
+#shaon-pricing-table-plus h3,
+#shaon-pricing-table-plus h4,
+#shaon-pricing-table-plus li {
+	list-style: none;
+}
+
+.minimal {
+ 	margin: 20px auto 0;
+}
+
+.minimal .plan {
+	width:         25%;
+	float:         left;
+	margin-left:   -1px;
+	margin-bottom: 20px;
+}
+
+.minimal .plan:first-child {
+	margin-left: 0
+}
+
+.smooth .minimal .content-highlight{
+	padding:0  15px;
+}
+.smooth .minimal{
+	margin: 20px -15px 0;
+ }
+
+.minimal .plan h3 {
+ 	text-align:  center;
+	line-height: 45px
+}
+
+.minmal .plan h3 {
+	background: #5e923c
+}
+
+.minimal .plan li {
+	line-height: 3.8em;
+}
+
+.select, .plan li {
+	text-align: center
+}
+.minimal .select {
+	border:        1px solid #ddd;
+}
+
+.minimal .highlight.featured .select{
+	padding-bottom: 20px;
+}
+
+.gray .minimal .features ul{
+	 border-bottom: none;
+}
+
+.minimal .features ul {
+	border:        1px solid #ddd;
+ }
+
+.minimal .features ul li {
+	border-bottom: 1px solid #ddd;
+}
+.minimal .features ul li:last-child{
+	border-bottom: none;
+}
+/* specialized
+-------------------------------------------------------------------*/
+
+
+.interval {
+	font-size: 11px;
+}
+
+.amount, .interval {
+	display:    block;
+	text-align: center
+}
+
+.amount {
+	font-size: 40px;
+}
+
+.amount span {
+	vertical-align: super;
+	font-size:      20px
+}
+
+/* Top
+-------------------------------------------------------------------*/
+.minimal .p1 h3 {
+	border: 1px solid #ddd;
+	margin: 0;
+}
+
+.minimal .plan h4 {
+	padding:      10px 0;
+	border-left:  1px solid #ddd;
+	border-right: 1px solid #ddd;
+	margin:       0;
+	font-weight: 600!important;
+	color: #333;
+}
+
+.minimal .pt-button {
+	border: 1px solid #b2b2b2;
+	color: #151d2a;
+	background: #fff;
+	line-height: 40px;
+	margin: 20px auto;
+	width: 131px;
+	display: block;
+}
+
+.minimal .pt-button:hover, .minimal .pt-button:active,.minimal .highlight.featured .pt-button {
+	
+	color:          #FFFFFF;
+	display:        block;
+	line-height:    40px;
+	margin:         20px auto;
+	width:          131px;
+	background:     #151d2a;
+}
+
+/* Highlight
+-------------------------------------------------------------------*/
+.minimal .highlight h3 {
+	padding: 10px 0;
+	color: #151d2a;
+}
+
+.minimal .highlight.featured h3 {
+	margin-top: -20px;
+	padding:    20px 0;
+	background: #151d2a;
+ 	color: #fff!important;
+}
+
+.minimal .highlight {
+	position: relative;
+}
+
+
+.green .minimal .highlight.featured h3{
+	margin-top: 0;
+	padding: 10px 0;
+	background: #151d2a;
+	color: #FFF !important;
+}
+.green .minimal .highlight.featured{
+	z-index: 9;
+}
+
+.green  .minimal .highlight.featured  .features ul,
+.green  .minimal .highlight.featured h4,
+.green .minimal .highlight.featured h3{
+	border-color:#151d2a ;
+}
+.green .minimal .highlight.featured h3{
+	border-bottom-color: #ddd!important;
+}
+.green  .minimal .highlight.featured  .features ul{
+	border-top-color:#ddd !important;
+}
+
+@media (max-width: 800px) {
+	.minimal .plan {
+		width:       45%;
+		float:       left;
+		margin-left: 20px;
+	}
+
+	.minimal .plan:nth-child(2n) {
+		margin-left: 20px;
+	}
+
+	.minimal .plan:nth-child(2n+1) {
+		margin-left: 0;
+	}
+	.smooth .minimal .content-highlight{
+		padding:0
+	}
+	.smooth .minimal{
+		margin: 20px auto 0;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.minimal .plan {
+		width:       100%;
+		float:       none;
+		margin-left: 0 !important;
+	}
+}
+
+/* hover effect */
+.minimal .highlight {
+-webkit-transition: all 0.2s linear;
+-moz-transition: all 0.2s linear;
+-o-transition: all 0.2s linear;
+-ms-transition: all 0.2s linear;
+transition: all 0.2s linear;
+}
+.minimal .highlight:hover {
+-moz-box-shadow: 0 0 0 5px #ef7b49, 0 4px 12px #000;
+-webkit-transform: scale(1.05, 1.05);
+-moz-transform: scale(1.05, 1.05);
+-ms-transform: scale(1.05, 1.05);
+-o-transform: scale(1.05, 1.05);
+transform: scale(1.05, 1.05);
+background: #fff;
+z-index: 10;
+}
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery Slide Panel</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#cover").click(function(){
+		$("#panel").slideToggle("slow");
+	});
+});
+
+</script>
+
+
+<link href="lab18.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="panel">
+  <p>This is the first paragraph. Here's a link to <a href="http://cnn.com">CNN</a></p>
+  <p>This is the second paragraph. Here's a link to <a href="http://abcnews.com">ABC News</a></p>
+  <p>This is the thrid and final paragraph. Here's a link to <a href="http://cbsnews.com">CBS News</a></p>
+</div>
+<div id="cover">
+<p>Click here to show/hide some links.</p>
+</div>
+</body>
+</html>

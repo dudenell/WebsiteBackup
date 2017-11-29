@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+table{
+	text-align:center;
+	padding: 10px;
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, #edit{
+	text-align: center;	
+}
+
+#form {
+	text-align: center;		
+}

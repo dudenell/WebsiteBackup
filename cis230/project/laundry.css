@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+#title{
+	font-style: oblique;
+	font-size: 15px;
+}
+
+#footer{
+	text-align:center;
+	
+}
+#header{
+	text-align:left;
+	width: 75%;
+	padding: 10px;
+
+	
+}
+
+#boarder{
+	border:2px solid;	
+}

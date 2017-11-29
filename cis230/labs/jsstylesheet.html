@@ -1,0 +1,45 @@
+<script type="text/javascript">
+function swapStyleSheet1() 
+{ 
+ //Local Variables 
+ var changeCSS; //Object reference to CSS link tag 
+ 
+ //Get access to style sheet link 
+ changeCSS = document.getElementById("cssLink"); 
+ 
+ //Assign a new style sheet 
+ changeCSS.href = "jsstyle1.css"; 
+} 
+ 
+ function swapStyleSheet2() 
+{ 
+ //Local Variables 
+ var changeCSS; //Object reference to CSS link tag 
+ 
+ //Get access to style sheet link 
+ changeCSS = document.getElementById("cssLink"); 
+ 
+ //Assign a new style sheet 
+ changeCSS.href = "jsstyle2.css"; 
+} 
+</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Style Sheet Swap Script Page</title>
+<link href="jsstyle1.css" rel="stylesheet" type="text/css" id="cssLink">
+</head>
+
+<body>
+<h1 id="banner">Watch the Styles Change!</h1>
+<div id="content">
+<p id="p1">When one of the two buttons is pressed, the styling of the page will change.</p>
+<p id="p2">However, none of the content will change -- just its appearance.</p>
+</div>
+<div id="buttons">
+<input type="button" id="swap1" onclick="swapStyleSheet1();" value="Change to Style Sheet 1"/>
+<input type="button" id="swap2" onclick="swapStyleSheet2();" value="Change to Style Sheet 2"/>
+</div>
+</body>
+</html>

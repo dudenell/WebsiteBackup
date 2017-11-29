@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pizza Orders</title>
+</head>
+
+<body>
+<h1>Pizza Order online</h1>
+<form action="lab2.php" method="post">
+<p>Enter your name: <input name="name" type="text" /></p>
+<p>How many<input name="quantity" type="text" size="3" maxlength="3" />
+($8.00 each)</p>
+<p><input name="meatlovers" type="checkbox" value="true" />Meat loveres(Add $3.00)</p>
+<p><input name="cheese" type="checkbox" value="true" />Extra cheese (Add $1.50)</p>
+<p>Either:</p>
+<p>
+  <label>
+    <input type="radio" name="method" value="delivered" id="method_0" />
+    Delivered (Add $2.00)</label>
+  <br />
+  <label>
+    <input name="method" type="radio" id="method_1" value="pickup" checked="checked" />
+    Pickup</label>
+  <br />
+</p>
+<p><input type="submit" name="button" id="button" value="Submit the order" /><input type="reset" name="button" id="button" value="Reset" /></p>
+</form>
+</body>
+</html>

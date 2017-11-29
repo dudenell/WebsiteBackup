@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Time Greeting Script Page</title>
+<link href="lab17.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function timeGreeting()
+{
+//Local Variables
+var timeNow; //Object reference to the computer's clock
+var hour; //Hour of the day
+var greeting; //Object reference to greeting heading
+var photo; //Object reference to image
+//Get the current day and time from the computer's clock
+timeNow = new Date();
+//Get the hour of the time
+hour = timeNow.getHours();
+//Get access to the greeting heading and image
+greeting = document.getElementById("welcomeMessage");
+photo = document.getElementById("welcomeImage");
+//Determine and display appropriate greeting and image
+if (hour < 5 || hour > 18) //Evening
+{
+//Set the heading text
+greeting.innerHTML = "Good evening, welcome to Vesper Hills!";
+//Set the photo source, alt text, and title
+photo.src = "../images/vhevening.jpg";
+photo.alt = "Evening photo of our sign and clubhouse.";
+photo.title = photo.alt;
+}
+else if (hour < 12) //Morning
+{
+//Set the heading text
+greeting.innerHTML = "Good morning, welcome to Vesper Hills!";
+//Set the photo source, alt text, and title
+photo.src = "../images/vhmorning.jpg";
+photo.alt = "Morning photo of our sign and clubhouse.";
+photo.title = photo.alt;
+}
+else //Afternoon
+{
+//Set the heading text
+greeting.innerHTML = "Good afternoon, welcome to Vesper Hills!";
+//Set the photo source, alt text, and title
+photo.src = "../images/vhafternoon.jpg";
+photo.alt = "Afternoon photo of our sign and clubhouse.";
+photo.title = photo.alt;
+}
+}
+</script>
+
+</head>
+
+<body onload="timeGreeting();">
+<div id="imageWrapper">
+<h1 id="welcomeMessage">This greeting will change based on the time of day</h1>
+<img scr="" alt="" title="" id="welcomeImage" width="400px" height="267px" />
+<p id="info">Thank you for visiting our site. Our golf season begins May 1st. We hope to see you in the
+spring! We will begin booking tee times for the course in April.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+a:link{ 
+	color: #66cc66; text-decoration: none;
+}
+a:visited{
+	color: #99cc33; text-decoration: none;
+}
+a:active{
+	color: #996633; text-decoration: underline;
+}
+#address{
+	padding: 15px; 
+	width: 200px;
+	height: 160px; 
+	border: solid 2px #003a63; 
+	text-align: center; 
+	background-color: #9fd7ff;
+}

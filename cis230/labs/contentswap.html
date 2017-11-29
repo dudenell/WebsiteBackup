@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery Content Swap</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+//Define functionality for Jefferson - Declaration of Independence
+$("#jefferson").mouseenter(function(){
+$("#jefferson").attr("src","../images/jeffersoncolor.jpg");
+});
+$("#jefferson").mouseleave(function(){
+$("#jefferson").attr("src","../images/jeffersonbw.jpg");
+});
+$("#jefferson").click(function(){
+$("#doc").load("declaration.html");
+});
+//Define functionality for Madison - Bill of Rights
+$("#madison").mouseenter(function(){
+$("#madison").attr("src","../images/madisoncolor.jpg");
+});
+$("#madison").mouseleave(function(){
+$("#madison").attr("src","../images/madisonbw.jpg");
+});
+$("#madison").click(function(){
+$("#doc").load("rights.html");
+});
+//Define functionality for Lincoln - Gettysburg Address
+$("#lincoln").mouseenter(function(){
+$("#lincoln").attr("src","../images/lincolncolor.jpg");
+});
+$("#lincoln").mouseleave(function(){
+$("#lincoln").attr("src","../images/lincolnbw.jpg");
+});
+$("#lincoln").click(function(){
+$("#doc").load("gettysburg.html");
+});
+});
+
+</script>
+<link href="lab20.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="images">
+<img scr=../images/jeffersonbw.jpg title="Declaration of Independence" alt="Declaration of Independence" id="jefferson" />
+<img scr=../images/madisonbw.jpg title="Bill of Rights" alt="Bill of Rights" id="madison" />
+<img scr=../images/lincolnbw.jpg title="Gettysburg Address" alt="Gettysburg Address" id="lincoln" />
+</div>
+<div id="doc">
+<p>Read some great American documents by clicking the author's portraits above.</p>
+</div>
+</body>
+</html>

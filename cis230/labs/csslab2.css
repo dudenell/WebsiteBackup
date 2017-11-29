@@ -1,0 +1,39 @@
+@charset "utf-8";
+body {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	line-height: 15px;
+	color: #006;
+	background-color: #999;
+}
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+	color: #EDEDED;
+	text-decoration: underline;
+}
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #F00;
+}
+p {
+	line-height: 25px;
+}
+.firstp {
+	font-style: italic;
+}
+.blockarea {
+	background-color: #333;
+	border: thick inset #030;
+	margin: 9px;
+	padding: 5px;
+}
+#footer {
+	font-family: "Comic Sans MS", cursive;
+	font-size: larger;
+	font-style: normal;
+	font-weight: bolder;
+	color: #CC0;
+	background-color: #999;
+}

@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #ff33cc;
+	
+}
+
+#banner {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 20px; 
+	color: #ffccff; 
+	
+}
+#content{
+	font-family: Times New Roman, Times, serif; 
+	font-size: 14px; 
+	color: #ffffff; 
+	width: 40%; 
+	float: left; 
+}
+
+#buttons {
+	width: 40%; 
+	float: right;
+}

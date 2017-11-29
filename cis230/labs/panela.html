@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery Animated Side Panel Activated by Clicking</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#sidePanel").click(function(){
+			//Local Variables
+			var panel; //Object reference to the side panel
+			var currentLeft; //Current value of side panel’s left property
+			//Get access to the side panel
+			panel = document.getElementById("sidePanel");
+			//Read current value of side panel’s left property
+			currentLeft = panel.style.left;
+			//Determine whether panel is expanded or contracted
+			if (currentLeft == "-270px") //Contracted
+			{
+			//Expand panel
+			$("#sidePanel").animate({left:"0px"},"slow");
+			}
+			else //Expanded
+			{
+			//Contract panel
+			$("#sidePanel").animate({left:"-270px"},"slow");
+			}
+		});
+	});
+</script>
+<link href="lab19.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="sidePanel">
+  <h2>Read this Side Panel!</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed metus nec erat rhoncus porttitor nec ac est. Proin vel sem condimentum, congue dolor a, imperdiet tortor. Morbi libero risus, porttitor ac diam non, imperdiet tincidunt diam. Vivamus a luctus tortor, sed venenatis risus. Proin et tellus vitae ipsum pellentesque ultrices vel id velit. Aliquam orci leo, laoreet vitae mauris quis, sollicitudin luctus tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec faucibus magna at ligula aliquet auctor. Nam sit amet sapien eu diam cursus luctus in vel velit. Nulla enim ligula, volutpat ut scelerisque in, mollis a nibh. Pellentesque commodo tincidunt adipiscing. Praesent lobortis orci ac quam gravida, vel placerat libero scelerisque. Aenean nunc tortor, ultricies a purus a, imperdiet semper purus. Pellentesque tincidunt velit in neque malesuada accumsan.</p>
+  <p>Nulla semper ante dictum tellus tincidunt porta in id ipsum. Curabitur fermentum eu diam non tincidunt. Nulla sit amet mi libero. Mauris lacus tellus, volutpat sit amet rhoncus eget, rhoncus eu sapien. Curabitur id lacus id lacus egestas aliquet ut sit amet sapien. Duis id viverra enim, at tempor erat. Sed ut sollicitudin metus. In vehicula consequat elementum. Donec eu dapibus sapien, eget pellentesque nisi. Pellentesque id tortor a quam sollicitudin feugiat. Aliquam id turpis vitae quam laoreet tempus adipiscing nec risus. Suspendisse ullamcorper dolor id turpis ornare, nec auctor elit vestibulum.</p>
+  <p>Suspendisse sit amet malesuada elit, non rutrum odio. Donec sed vehicula metus, in sollicitudin sem. Aliquam commodo enim sit amet nunc cursus, at tincidunt risus consectetur. Fusce vitae convallis mi, nec tincidunt mauris. Pellentesque id lorem sit amet tortor luctus varius. Aliquam vitae lacus eu felis interdum pulvinar. Phasellus vehicula adipiscing elit, quis ultrices est bibendum in. Nam sed felis sed tortor mollis venenatis. Vestibulum mattis adipiscing elit, accumsan tempor mauris facilisis vel. Ut mattis venenatis mi, ut sagittis tellus ullamcorper sed. Aenean scelerisque purus urna, eu cursus dolor ornare cursus. Donec elementum fermentum massa, vitae accumsan neque facilisis ac. Pellentesque hendrerit tempus facilisis.</p>
+</div>
+<div id="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sem sem, tincidunt et velit nec, vehicula tincidunt nisi. Sed eget massa at nulla pharetra ultricies. Curabitur tincidunt rhoncus libero id commodo. Praesent dapibus viverra sodales. Donec luctus venenatis massa eu scelerisque. Aliquam erat volutpat. Nunc nulla ligula, vehicula a erat non, tincidunt elementum neque. Maecenas ultrices sapien a sagittis ultricies. Donec a justo facilisis, accumsan neque eu, dapibus lacus. Nunc sagittis semper mi non lacinia. Proin id urna porta, pharetra sapien ac, posuere ante. In hac habitasse platea dictumst. Morbi commodo ullamcorper nunc vel luctus. Etiam urna elit, ultricies sit amet ipsum non, sagittis scelerisque leo. Quisque convallis bibendum tellus, vel adipiscing nisl suscipit scelerisque.</p>
+</div>
+</body>
+</html>

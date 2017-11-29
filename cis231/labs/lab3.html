@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Yankee Tickets</title>
+</head>
+
+<body>
+<form action="lab3.php" method="post">
+<p>Name: <input name="name" type="text" /></p>
+<p>Email: <input name="email" type="text" /></p>
+<p>How many tickets: <input name="quantity" type="text" size="3" maxlength="3" />
+<p>Section:</p>
+<p>
+  <label>
+    <input type="radio" name="seats" value="mvp" id="seats_0" />
+    MVP Box - $300 each</label>
+  <br />
+  <label>
+    <input type="radio" name="seats" value="field" id="seats_1" />
+    Field Level - $100 each</label>
+  <br />
+  <label>
+    <input type="radio" name="seats" value="bleachers" id="seats_2" />
+    Bleachers - $28 each</label>
+  <br />
+</p>
+<p>All tickets are emailed. If you want to pick them up at the box office the day of the game, there will be a $12 total charge:</p>
+<p><input name="boxoffice" type="checkbox" value="" /> Yes I want to pick them up at the box office</p>
+<p><input type="submit" name="button" id="button" value="Submit the order" /><input type="reset" name="button" id="button" value="Reset" /></p>
+</form>
+</body>
+</html>

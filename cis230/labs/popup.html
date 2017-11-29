@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery Popup Div</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+//Set initial faded state of popup div
+$("#popup").fadeTo(0,0);
+//When 'more' button is pressed, show popup div and enable mask
+$("#more").click(function(){
+$("#mask").css({"visibility":"visible"});
+$("#popup").css({"visibility":"visible"});
+$("#popup").fadeTo("slow",1.00);
+$("#wrapper").fadeTo("slow",0.20);
+});
+//When 'close' button is pressed, hide popup div and disable mask
+$("#close").click(function(){
+$("#wrapper").fadeTo("slow",1.00);
+$("#popup").fadeTo("slow",0,function(){
+$("#popup").css({"visibility":"hidden"});
+});
+$("#mask").css({"visibility":"hidden"});
+});
+});
+</script>
+<link href="lab21.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+<div id="mask"></div>
+<div id="popup">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius vehicula purus, vel scelerisque purus molestie sit amet. Etiam laoreet ligula ut magna ultricies, non tincidunt metus tristique. Duis in libero nunc. Praesent fermentum leo sit amet erat laoreet fermentum. Vestibulum a scelerisque mi. Aenean mauris felis, pellentesque eget dapibus non, lobortis ac nunc. Aenean sit amet tortor consectetur, placerat tellus in, condimentum leo. Nunc tincidunt egestas pretium. Proin ultricies enim nisi, eu pulvinar metus ullamcorper eu. Fusce quis felis tempus, cursus justo in, porta massa. Integer dignissim nisi rutrum dolor ullamcorper, eget eleifend nisi molestie. Maecenas porttitor magna a augue viverra dignissim.</p>
+
+<p>Donec auctor faucibus massa non lobortis. Ut porta facilisis risus vel vestibulum. Nam vestibulum ligula sed felis fringilla, eget sodales turpis eleifend. Ut lobortis augue sed nisi viverra, et semper ante tempus. Maecenas ultricies pharetra tempor. Quisque et placerat justo. In eu congue nisl, in auctor nunc. Pellentesque fringilla viverra sollicitudin. Maecenas nec lacus pulvinar, pulvinar purus vitae, blandit justo. Nam et enim sit amet ligula fermentum lacinia vitae sit amet elit.</p>
+
+<p>Fusce ut lacus diam. Ut eget justo id leo tincidunt sodales. Quisque eget risus nulla. Sed eget convallis lorem, a commodo lorem. Fusce venenatis elit sed semper mollis. Etiam lobortis consequat consectetur. Sed blandit sapien nisi, sit amet dignissim nisi adipiscing ac. Donec tincidunt ultricies imperdiet. Duis convallis posuere auctor. Cras est felis, tempor sit amet ultricies commodo, interdum sit amet odio. Donec ultrices sapien a nisi aliquet, ac mollis erat imperdiet. Cras faucibus sed est fringilla blandit. Praesent vitae fringilla tellus, ac sollicitudin nunc.</p>
+<div id="buttonWrapper"><input name="Close" type="button" value="close" id="close" /></div>
+</div>
+<div id="wrapper">
+<div id="buttonWrapper"><input name="More Stuff" type="button" value="more" id="more" /></div>
+<h1>jQuery boldly goes where no popup has gone before!</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam adipiscing nisi tortor. Sed sed ornare sapien, sed feugiat nisl. Fusce metus nibh, viverra vitae dolor vitae, faucibus porta tellus. Aliquam congue rhoncus erat non varius. Nullam id euismod sapien, ut pharetra arcu. Praesent consectetur id nibh nec semper. Pellentesque nisl nisl, facilisis at dui ac, lobortis auctor est. Morbi a diam interdum, convallis nisi ut, imperdiet velit. Etiam sagittis mauris libero, non pharetra ante aliquet eget. Cras adipiscing lorem sed tortor mattis, nec blandit sapien adipiscing. Donec eu dolor est. Nullam eget semper dui. Morbi luctus urna ligula. Sed convallis dui sit amet dui molestie, nec sodales mi rhoncus.</p>
+
+<p>Nullam posuere nulla id massa adipiscing consequat. Phasellus ut nunc adipiscing nisl fermentum adipiscing. Praesent laoreet tincidunt ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec gravida purus eget sem pharetra ultricies. Donec ut massa tincidunt magna varius accumsan eget posuere nisl. Nam porta commodo eros tempor congue. Phasellus consectetur laoreet odio nec eleifend.</p>
+
+<p>Sed interdum quam tellus. Suspendisse felis augue, scelerisque a viverra et, mattis quis risus. Donec id quam eget nunc posuere condimentum eget eu nunc. Vivamus at lectus lorem. Curabitur eu consectetur elit. Suspendisse condimentum dolor quis dolor congue, vel tristique augue scelerisque. Donec congue turpis id ante lacinia, vitae interdum erat porttitor. Etiam ut venenatis est. Integer vulputate nisi pretium metus ultricies, sit amet bibendum est fermentum. Phasellus feugiat diam et augue vehicula consequat. Maecenas placerat justo lorem, at congue massa semper vitae.</p>
+
+<p>Donec condimentum sapien quam, id lacinia augue mattis at. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam elementum ipsum sit amet facilisis mattis. Mauris laoreet elementum velit a mattis. Phasellus iaculis vulputate faucibus. Fusce fermentum lacinia rutrum. Duis consequat, lorem in faucibus molestie, risus orci elementum eros, ac mattis sapien odio eu nibh. Sed facilisis nisl leo, eu aliquet odio egestas a. Quisque blandit elit felis, eget sollicitudin mauris ornare a. Phasellus non velit lectus. Nunc eu nunc quis velit facilisis ullamcorper porttitor ut purus. Etiam venenatis tortor vitae feugiat auctor.</p>
+
+<p>Integer bibendum rhoncus rhoncus. Etiam consectetur quam non massa malesuada porttitor. Sed aliquam et enim non pretium. Sed ligula velit, ultrices quis leo vitae, lacinia dignissim quam. Cras sit amet tincidunt justo, et fermentum neque. Nullam ultricies accumsan dui, quis varius elit sollicitudin vel. Etiam nec sem erat. Vestibulum porta volutpat est, vitae porttitor quam malesuada ut. Nunc consequat est at lorem tempor gravida. Nunc blandit egestas porttitor. Maecenas blandit purus ut nibh blandit, sed porttitor urna tempor. Maecenas tristique ullamcorper egestas.</p>
+
+</div>
+</body>
+</html>

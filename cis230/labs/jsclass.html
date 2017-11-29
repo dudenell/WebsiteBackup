@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS Swap Script Page</title>
+<link href="lab15.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p id="p1">This is the standard content. It should not change appearance properties at any time.</p>
+<p id="p2" class="plain">
+This content is affected by the script. It should change appearance properties when the
+script is called.
+</p>
+<input type="button" id="swapbutton" value="Swap" onclick="swapStyles();"/>
+</body>
+</html>
+<script type="text/javascript">
+function swapStyles()
+{
+//Local Variables
+var p2; //Object reference to paragraph p2
+//Get access to paragraph p2
+p2 = document.getElementById("p2");
+//Determine which class to apply
+if (p2.className == "plain")
+{
+p2.className = "purty";
+}
+else
+{
+p2.className = "plain";
+}
+}
+</script>

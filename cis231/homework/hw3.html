@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vacation Rental</title>
+</head>
+
+<body>
+<h1>Vacation Rental</h1>
+<form action="hw3.php" method="post">
+<p>Full name:<input name="fullname" type="text" required autofocus="autofocus"/></p>
+<p>Nights you are staying: <input name="nights" type="text" size="2" maxlength="2" required/></p>
+<p>Number of rooms:</p>
+<p>
+  <label>
+    <input type="radio" name="rooms" value="250" id="rooms_0" />
+    1 Room</label>
+  <br />
+  <label>
+    <input type="radio" name="rooms" value="350" id="rooms_1" />
+    2 Rooms</label>
+  <br />
+  <label>
+    <input type="radio" name="rooms" value="425" id="rooms_2" />
+    3 Rooms</label>
+</p>
+<p>Smoking? ($500 extra)</p>
+<p>
+  <label>
+    <input type="radio" name="smoking" value="0" id="smoking_0" />
+    No</label>
+  <br />
+  <label>
+    <input type="radio" name="smoking" value="500" id="smoking_1" />
+    Yes</label>
+  <br />
+</p>
+<p>
+  <input type="checkbox" name="pet" id="pet" />
+  <label for="pet">Will there be pets in the room ($200 extra)</label>  
+</p>
+<p>
+  <input type="checkbox" name="breakfast" id="breakfast" />
+  <label for="breakfast">Do you want breakfast ($25 extra per room, per night)</label>
+  </p>
+
+<input name="Submit" type="submit" /><input name="Reset" type="reset" />
+</form>
+</body>
+</html>

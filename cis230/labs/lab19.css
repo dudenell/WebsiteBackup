@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+#content{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#sidePanel{
+	width: 260px;
+	height: 260px;
+	overflow: auto;
+	border-top: solid 2px #992277;
+	border-right: solid 2px #992277;
+	border-bottom: solid 2px #992277;
+	padding: 20px;
+	margin-top: -150px;
+	background-color: #99ffee;
+	top: 50%;
+	left: -270px;
+	position: fixed;
+	z-index: 999;
+}
